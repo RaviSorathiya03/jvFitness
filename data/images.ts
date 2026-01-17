@@ -1,170 +1,69 @@
 /**
- * Image Configuration
- * 
- * This file contains the image paths and Pexels search prompts for website images.
- * 
- * TO ADD IMAGES:
- * 1. Search on Pexels.com using the prompts below
- * 2. Download images and save to /public/images/
- * 3. Update the paths below to match your filenames
- * 
- * RECOMMENDED IMAGE SIZES:
- * - Hero: 1920x1080 or larger (landscape)
- * - Section backgrounds: 1920x800
- * - Cards: 800x600 or 600x400
- * - Testimonial avatars: 200x200 (square)
+ * Image Configuration for JV Fitness & Wellness Club
+ * Images to be downloaded from Pexels and saved to /public/images/
  */
 
-export interface SiteImage {
-    src: string;
-    alt: string;
-    pexelsPrompt: string; // Use this prompt to search on Pexels.com
-}
-
 export const images = {
-    // Hero Section Images
     hero: {
         background: {
-            src: "/images/hero-bg.jpg",
-            alt: "Fitness training session",
-            pexelsPrompt: "fitness gym workout people happy healthy lifestyle modern",
+            src: "/images/hero-gym-group.jpg",
+            alt: "Men and women training in gym",
+            pexelsUrl: "https://www.pexels.com/photo/men-and-women-training-in-the-gym-6186129/"
         },
         accent: {
-            src: "/images/hero-accent.jpg",
-            alt: "Healthy lifestyle",
-            pexelsPrompt: "healthy food bowl nutrition colorful vegetables lifestyle",
+            src: "/images/hero-strength.jpg",
+            alt: "Strength training session",
+            pexelsUrl: "https://www.pexels.com/photo/muscular-man-training-in-gym-414029/"
+        },
+        coach: {
+            src: "/images/coach-jyoti.jpg",
+            alt: "Jyoti - Your Wellness Coach",
         },
     },
-
-    // Transformation Section Images
     transformation: {
         before: {
             src: "/images/transformation-before.jpg",
-            alt: "Person feeling tired",
-            pexelsPrompt: "person tired exhausted stress sitting thinking",
+            alt: "Person stretching before workout",
+            pexelsUrl: "https://www.pexels.com/photo/person-in-red-shirt-doing-stretching-exercise-1552249/"
         },
         during: {
             src: "/images/transformation-during.jpg",
-            alt: "Coaching session",
-            pexelsPrompt: "personal trainer coaching fitness guidance support helping",
+            alt: "Trainer coaching in gym",
+            pexelsUrl: "https://www.pexels.com/photo/men-discussing-inside-gym-4140291/"
         },
         after: {
             src: "/images/transformation-after.jpg",
-            alt: "Happy confident person",
-            pexelsPrompt: "happy person confident smiling fitness healthy energy",
-        },
+            alt: "Happy confident person outdoors",
+            pexelsUrl: "https://www.pexels.com/photo/woman-standing-on-rocks-in-front-of-sea-during-sunset-2977565/"
+        }
     },
-
-    // Programs Section Images
     programs: {
         weightManagement: {
-            src: "/images/program-weight.jpg",
-            alt: "Weight management program",
-            pexelsPrompt: "measuring tape weight loss healthy food lifestyle",
+            src: "/images/program-weight-management.jpg",
+            alt: "Dumbbells and towel for weight goals",
+            pexelsUrl: "https://www.pexels.com/photo/top-view-photo-of-dumbbells-and-towel-1450373/"
         },
         nutrition: {
             src: "/images/program-nutrition.jpg",
-            alt: "Nutrition coaching",
-            pexelsPrompt: "healthy meal prep food colorful vegetables nutrition",
+            alt: "Healthy food plate",
+            pexelsUrl: "https://www.pexels.com/photo/healthy-food-on-a-plate-1640777/"
         },
         fitness: {
-            src: "/images/program-fitness.jpg",
-            alt: "Fitness training",
-            pexelsPrompt: "fitness workout gym dumbbell exercise strength training",
+            src: "/images/program-gym-studio.jpg",
+            alt: "Fitness gym interior",
+            pexelsUrl: "https://www.pexels.com/photo/people-inside-a-gym-317157/"
         },
         energy: {
             src: "/images/program-energy.jpg",
-            alt: "Energy and lifestyle",
-            pexelsPrompt: "person running jogging morning energy active outdoor",
+            alt: "Person jogging outdoors",
+            pexelsUrl: "https://www.pexels.com/photo/photo-of-person-jogging-on-road-1552242/"
         },
         wellness: {
-            src: "/images/program-wellness.jpg",
-            alt: "Wellness routine",
-            pexelsPrompt: "yoga meditation wellness calm peaceful mindfulness",
-        },
-    },
-
-    // About/Story Section Images
-    about: {
-        coach: {
-            src: "/images/coach.jpg",
-            alt: "Our wellness coach",
-            pexelsPrompt: "professional trainer coach friendly smiling portrait indian",
-        },
-        community: {
-            src: "/images/community.jpg",
-            alt: "Our community",
-            pexelsPrompt: "group fitness class community workout happy people together",
-        },
-        studio: {
-            src: "/images/studio.jpg",
-            alt: "Our wellness studio",
-            pexelsPrompt: "modern gym studio clean bright fitness center interior",
-        },
-    },
-
-    // Testimonial Avatars (placeholders - you can use initials instead)
-    testimonials: {
-        avatar1: {
-            src: "/images/testimonial-1.jpg",
-            alt: "Client testimonial",
-            pexelsPrompt: "indian woman portrait smiling happy professional",
-        },
-        avatar2: {
-            src: "/images/testimonial-2.jpg",
-            alt: "Client testimonial",
-            pexelsPrompt: "indian man portrait smiling confident professional",
-        },
-    },
-
-    // CTA Section Background
-    cta: {
-        background: {
-            src: "/images/cta-bg.jpg",
-            alt: "Start your journey",
-            pexelsPrompt: "sunrise motivation new beginning fitness outdoor nature",
-        },
-    },
-
-    // Decorative/Pattern Images
-    patterns: {
-        dots: {
-            src: "/images/pattern-dots.svg",
-            alt: "Decorative pattern",
-            pexelsPrompt: "N/A - Use SVG pattern generator",
-        },
-    },
+            src: "/images/program-wellness-yoga.jpg",
+            alt: "Woman doing yoga",
+            pexelsUrl: "https://www.pexels.com/photo/woman-doing-yoga-on-grass-field-during-golden-hour-1438763/"
+        }
+    }
 } as const;
 
-/**
- * PEXELS SEARCH TIPS:
- * 
- * 1. For best results, use the prompts above on pexels.com
- * 2. Look for images with:
- *    - Good lighting
- *    - Diverse representation
- *    - High resolution (at least 1920px wide)
- *    - Modern, clean aesthetic
- *    - Warm, inviting feel
- * 
- * 3. Recommended Free Alternatives:
- *    - Unsplash.com (similar prompts will work)
- *    - Pixabay.com
- *    
- * 4. Image Optimization:
- *    - Compress images before uploading (use TinyPNG or Squoosh)
- *    - Convert to WebP format for better performance
- *    - Use Next.js Image component for automatic optimization
- */
-
-// Helper function to get image with fallback
-export function getImage(key: keyof typeof images, subKey?: string): SiteImage | null {
-    const category = images[key];
-    if (!category) return null;
-
-    if (subKey && typeof category === 'object' && subKey in category) {
-        return (category as Record<string, SiteImage>)[subKey];
-    }
-
-    return null;
-}
+export type ImageConfig = typeof images;
