@@ -1,36 +1,175 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ JV Fitness & Wellness Club
 
-## Getting Started
+A modern, premium fitness and wellness website built with Next.js 16, featuring stunning animations, responsive design, and a storytelling-first approach.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16.1.3-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-FF0055?style=for-the-badge&logo=framer)
+
+---
+
+## ✨ Features
+
+### 🎨 Premium Design
+- **Storytelling-first approach** - Emotional, human-centered design
+- **Violet/Purple gradient theme** - Modern, premium color palette
+- **Glassmorphism effects** - Contemporary glass-like UI elements
+- **Professional typography** - Inter font for optimal readability
+
+### 🎬 Advanced Animations
+- **Framer Motion animations** - Smooth scroll reveals and transitions
+- **Magnetic buttons** - Interactive hover effects
+- **Animated gradient text** - Eye-catching headlines
+- **Floating badges** - Dynamic coach profile display
+- **Marquee testimonials** - Auto-scrolling social proof
+
+### 📱 Sections
+| Section | Description |
+|---------|-------------|
+| **Hero** | Coach photo with floating badges & animated effects |
+| **StoryIntro** | Empathetic messaging addressing user pain points |
+| **Programs** | Bento-style grid with program cards |
+| **TransformationJourney** | Before/During/After visual journey |
+| **TransformationProcess** | Step-by-step coaching timeline |
+| **Testimonials** | Auto-scrolling marquee with reviews |
+| **Pricing** | Tiered pricing with featured highlight |
+| **FAQ** | Accordion-style collapsible answers |
+| **CTA** | Final conversion section with gradient |
+| **Contact** | Form + Google Maps + WhatsApp integration |
+
+### 📞 Integrations
+- **WhatsApp** - Click-to-chat with pre-filled message
+- **Click-to-Call** - Direct phone dialing
+- **Email** - mailto: integration
+- **Google Maps** - Embedded location map
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ or Bun
+- npm, yarn, pnpm, or bun
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/RaviSorathiya03/jvFitness.git
+cd jvFitness/jvfitness
+
+# Install dependencies
+bun install
+# or
+npm install
+
+# Run development server
+bun run dev
+# or
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun run build
+# or
+npm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+jvfitness/
+├── app/
+│   ├── (marketing)/        # Marketing route group
+│   │   ├── layout.tsx      # Marketing layout with navbar/footer
+│   │   └── page.tsx        # Homepage with all sections
+│   ├── globals.css         # Global styles & animations
+│   └── layout.tsx          # Root layout
+├── components/
+│   ├── layout/             # Navbar, Footer
+│   ├── sections/           # All page sections
+│   ├── shared/             # Reusable components
+│   └── ui/                 # UI primitives (buttons, cards, etc.)
+├── data/                   # Static data (programs, pricing, FAQs)
+├── lib/                    # Utilities, site config, SEO
+└── public/images/          # Static images
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎨 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework:** [Next.js 16](https://nextjs.org/) with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Font:** Inter (Google Fonts)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📝 Configuration
+
+### Site Settings
+Edit `lib/site.ts` to update:
+- Business name & tagline
+- Contact details (phone, email, address)
+- WhatsApp number
+- Business hours
+- Social media links
+
+### Programs & Pricing
+Edit files in `data/` folder:
+- `programs.ts` - Coaching programs
+- `pricing.ts` - Pricing tiers
+- `faqs.ts` - FAQ content
+- `testimonials.ts` - Client reviews
+
+---
+
+## 🚢 Deployment
+
+### Deploy on Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RaviSorathiya03/jvFitness)
+
+### Other Platforms
+The app can be deployed on any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+---
+
+## 📄 Compliance Note
+
+> **Disclaimer:** This website is for an independent Herbalife Nutrition associate/member. It promotes coaching services only, not product sales. Results may vary based on individual effort.
+
+---
+
+## 📞 Contact
+
+- **Website:** [jvfitness.in](https://jvfitness.in)
+- **Phone:** +91 97270 54846
+- **Email:** rsorathiya16@gmail.com
+- **Location:** Adipur, Gujarat, India
+
+---
+
+## 📜 License
+
+This project is private and proprietary.
+
+---
+
+<p align="center">
+  Made with 💜 by <a href="https://github.com/RaviSorathiya03">Ravi Sorathiya</a>
+</p>
