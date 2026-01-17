@@ -61,7 +61,7 @@ export function Contact() {
     const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;
 
     return (
-        <section id="contact" className="bg-white py-24 dark:bg-neutral-900 lg:py-32">
+        <section id="contact" className="bg-white py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <SectionHeading
                     badge="Get in Touch"
@@ -74,10 +74,10 @@ export function Contact() {
                     {/* Contact Form */}
                     <ScrollReveal direction="left">
                         <GlowCardSimple className="h-full p-6 sm:p-8">
-                            <h3 className="text-xl font-bold text-neutral-900 dark:text-white">
+                            <h3 className="text-xl font-bold text-neutral-900">
                                 Book Your Free Consultation
                             </h3>
-                            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+                            <p className="mt-2 text-sm text-neutral-600">
                                 Fill in your details and we'll reach out to schedule your session.
                             </p>
 
@@ -87,15 +87,15 @@ export function Contact() {
                                     animate={{ opacity: 1, scale: 1 }}
                                     className="mt-8 flex flex-col items-center justify-center py-8 text-center"
                                 >
-                                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600 dark:bg-green-900/30">
+                                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
                                         <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <h4 className="mt-4 text-lg font-semibold text-neutral-900 dark:text-white">
+                                    <h4 className="mt-4 text-lg font-semibold text-neutral-900">
                                         Request Sent!
                                     </h4>
-                                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+                                    <p className="mt-2 text-sm text-neutral-600">
                                         We'll connect with you on WhatsApp shortly.
                                     </p>
                                 </motion.div>
@@ -105,7 +105,7 @@ export function Contact() {
                                         <div>
                                             <label
                                                 htmlFor="contact-name"
-                                                className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                                className="block text-sm font-medium text-neutral-700"
                                             >
                                                 Your Name *
                                             </label>
@@ -114,14 +114,14 @@ export function Contact() {
                                                 id="contact-name"
                                                 name="name"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                                 placeholder="Enter your name"
                                             />
                                         </div>
                                         <div>
                                             <label
                                                 htmlFor="contact-phone"
-                                                className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                                className="block text-sm font-medium text-neutral-700"
                                             >
                                                 Phone Number *
                                             </label>
@@ -130,7 +130,7 @@ export function Contact() {
                                                 id="contact-phone"
                                                 name="phone"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                                 placeholder="+91 98765 43210"
                                             />
                                         </div>
@@ -140,7 +140,7 @@ export function Contact() {
                                         <div>
                                             <label
                                                 htmlFor="contact-goal"
-                                                className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                                className="block text-sm font-medium text-neutral-700"
                                             >
                                                 Your Goal *
                                             </label>
@@ -148,7 +148,7 @@ export function Contact() {
                                                 id="contact-goal"
                                                 name="goal"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             >
                                                 <option value="">Select your goal</option>
                                                 {goals.map((goal) => (
@@ -161,7 +161,7 @@ export function Contact() {
                                         <div>
                                             <label
                                                 htmlFor="contact-time"
-                                                className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                                className="block text-sm font-medium text-neutral-700"
                                             >
                                                 Preferred Time *
                                             </label>
@@ -169,7 +169,7 @@ export function Contact() {
                                                 id="contact-time"
                                                 name="time"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             >
                                                 <option value="">Select preferred time</option>
                                                 {timeSlots.map((time) => (
@@ -184,7 +184,7 @@ export function Contact() {
                                     <div>
                                         <label
                                             htmlFor="contact-message"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Additional Message (Optional)
                                         </label>
@@ -192,7 +192,7 @@ export function Contact() {
                                             id="contact-message"
                                             name="message"
                                             rows={3}
-                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             placeholder="Tell us more about your goals..."
                                         />
                                     </div>
@@ -229,14 +229,14 @@ export function Contact() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="flex items-center gap-4 rounded-xl border-2 border-green-200 bg-green-50 p-4 transition-colors hover:bg-green-100 dark:border-green-900 dark:bg-green-950/30 dark:hover:bg-green-950/50"
+                                className="flex items-center gap-4 rounded-xl border-2 border-green-200 bg-green-50 p-4 transition-colors hover:bg-green-100"
                             >
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-white">
                                     <MessageCircle className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <p className="font-semibold text-neutral-900 dark:text-white">WhatsApp</p>
-                                    <p className="text-sm text-neutral-600 dark:text-neutral-400">Chat now</p>
+                                    <p className="font-semibold text-neutral-900">WhatsApp</p>
+                                    <p className="text-sm text-neutral-600">Chat now</p>
                                 </div>
                             </motion.a>
 
@@ -244,14 +244,14 @@ export function Contact() {
                                 href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="flex items-center gap-4 rounded-xl border-2 border-violet-200 bg-violet-50 p-4 transition-colors hover:bg-violet-100 dark:border-violet-900 dark:bg-violet-950/30 dark:hover:bg-violet-950/50"
+                                className="flex items-center gap-4 rounded-xl border-2 border-violet-200 bg-violet-50 p-4 transition-colors hover:bg-violet-100"
                             >
                                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-violet-500 text-white">
                                     <Phone className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <p className="font-semibold text-neutral-900 dark:text-white">Call Us</p>
-                                    <p className="text-sm text-neutral-600 dark:text-neutral-400">{siteConfig.contact.phone}</p>
+                                    <p className="font-semibold text-neutral-900">Call Us</p>
+                                    <p className="text-sm text-neutral-600">{siteConfig.contact.phone}</p>
                                 </div>
                             </motion.a>
                         </div>
@@ -260,35 +260,35 @@ export function Contact() {
                         <motion.a
                             href={`mailto:${siteConfig.contact.email}`}
                             whileHover={{ scale: 1.01 }}
-                            className="flex items-center gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-800/50 dark:hover:bg-neutral-800"
+                            className="flex items-center gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition-colors hover:bg-neutral-100"
                         >
-                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                 <Mail className="h-5 w-5" />
                             </div>
                             <div>
-                                <p className="text-sm text-neutral-500 dark:text-neutral-500">Email</p>
-                                <p className="font-medium text-neutral-900 dark:text-white">{siteConfig.contact.email}</p>
+                                <p className="text-sm text-neutral-500">Email</p>
+                                <p className="font-medium text-neutral-900">{siteConfig.contact.email}</p>
                             </div>
                         </motion.a>
 
                         {/* Address & Hours */}
                         <div className="grid gap-4 sm:grid-cols-2">
-                            <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-800/50">
-                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                            <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                     <MapPin className="h-5 w-5" />
                                 </div>
-                                <h4 className="font-medium text-neutral-900 dark:text-white">Visit Us</h4>
-                                <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+                                <h4 className="font-medium text-neutral-900">Visit Us</h4>
+                                <p className="mt-1 text-sm text-neutral-600">
                                     {siteConfig.contact.address}
                                 </p>
                             </div>
 
-                            <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-800/50">
-                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                            <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                     <Clock className="h-5 w-5" />
                                 </div>
-                                <h4 className="font-medium text-neutral-900 dark:text-white">Hours</h4>
-                                <div className="mt-1 space-y-0.5 text-sm text-neutral-600 dark:text-neutral-400">
+                                <h4 className="font-medium text-neutral-900">Hours</h4>
+                                <div className="mt-1 space-y-0.5 text-sm text-neutral-600">
                                     <p>Mon-Fri: {siteConfig.hours.weekdays}</p>
                                     <p>Sat: {siteConfig.hours.saturday}</p>
                                     <p>Sun: {siteConfig.hours.sunday}</p>
@@ -302,9 +302,9 @@ export function Contact() {
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.01 }}
-                            className="group relative overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800"
+                            className="group relative overflow-hidden rounded-xl border border-neutral-200"
                         >
-                            <div className="aspect-video bg-neutral-200 dark:bg-neutral-800">
+                            <div className="aspect-video bg-neutral-200">
                                 <iframe
                                     src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5!2d69.85!3d23.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAdipur%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1`}
                                     className="h-full w-full border-0"

@@ -8,7 +8,7 @@ import { Check } from "lucide-react";
 
 export function Pricing() {
     return (
-        <section id="pricing" className="bg-white py-24 dark:bg-neutral-900">
+        <section id="pricing" className="bg-white py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <SectionHeading
                     badge="Investment"
@@ -32,7 +32,7 @@ export function Pricing() {
                                     <PricingCard tier={tier} highlighted />
                                 </MovingBorder>
                             ) : (
-                                <div className="h-full rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900">
+                                <div className="h-full rounded-2xl border border-neutral-200 bg-white">
                                     <PricingCard tier={tier} />
                                 </div>
                             )}
@@ -45,7 +45,7 @@ export function Pricing() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mx-auto mt-12 max-w-2xl text-center text-xs text-neutral-500 dark:text-neutral-500"
+                    className="mx-auto mt-12 max-w-2xl text-center text-xs text-neutral-500"
                 >
                     {pricingDisclaimer}
                 </motion.p>
@@ -66,24 +66,24 @@ function PricingCard({
             {/* Header */}
             <div className="text-center">
                 {highlighted && (
-                    <span className="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700 dark:bg-violet-900/30 dark:text-violet-400">
+                    <span className="inline-block rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700">
                         Most Popular
                     </span>
                 )}
-                <h3 className="mt-3 text-2xl font-bold text-neutral-900 dark:text-white">
+                <h3 className="mt-3 text-2xl font-bold text-neutral-900">
                     {tier.name}
                 </h3>
-                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+                <p className="mt-2 text-sm text-neutral-600">
                     {tier.description}
                 </p>
             </div>
 
             {/* Price */}
             <div className="mt-6 text-center">
-                <span className="text-4xl font-bold text-neutral-900 dark:text-white">
+                <span className="text-4xl font-bold text-neutral-900">
                     {tier.price}
                 </span>
-                <span className="text-neutral-500 dark:text-neutral-500">
+                <span className="text-neutral-500">
                     /{tier.duration}
                 </span>
             </div>
@@ -93,7 +93,7 @@ function PricingCard({
                 {tier.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                         <Check className="mt-0.5 h-5 w-5 shrink-0 text-green-500" />
-                        <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                        <span className="text-sm text-neutral-600">
                             {feature}
                         </span>
                     </li>
@@ -107,7 +107,7 @@ function PricingCard({
                 }}
                 className={`mt-8 w-full rounded-lg px-4 py-3 font-medium transition-all ${highlighted
                         ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white hover:from-violet-700 hover:to-purple-700"
-                        : "border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
+                        : "border border-neutral-300 bg-white text-neutral-900 hover:bg-neutral-50"
                     }`}
             >
                 {tier.cta}

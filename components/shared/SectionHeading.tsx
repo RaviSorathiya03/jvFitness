@@ -35,11 +35,11 @@ export function SectionHeading({
             )}
         >
             {badge && (
-                <span className="mb-4 inline-flex items-center rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700 dark:bg-violet-900/30 dark:text-violet-400">
+                <span className="mb-4 inline-flex items-center rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700">
                     {badge}
                 </span>
             )}
-            <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
+            <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">
                 {title}{" "}
                 {gradientText && (
                     <AnimatedGradientText className="text-3xl font-bold sm:text-4xl">
@@ -48,7 +48,7 @@ export function SectionHeading({
                 )}
             </h2>
             {description && (
-                <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600 dark:text-neutral-400">
+                <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
                     {description}
                 </p>
             )}

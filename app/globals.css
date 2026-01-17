@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
-/* Light Mode Only - Custom Theme Variables */
+/* FORCE LIGHT MODE ONLY - Ignore system preferences */
 :root {
+  color-scheme: light only;
   --background: #fafafa;
   --foreground: #171717;
 
@@ -16,6 +17,20 @@
   --border: #e5e7eb;
 }
 
+/* Override any dark mode detection */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only;
+    --background: #fafafa;
+    --foreground: #171717;
+    --secondary: #f3f4f6;
+    --secondary-foreground: #374151;
+    --muted: #f9fafb;
+    --muted-foreground: #6b7280;
+    --border: #e5e7eb;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,27 +38,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  color-scheme: light only !important;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: #fafafa !important;
+  color: #171717 !important;
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom Scrollbar */
+/* Custom Scrollbar - Light Mode */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--muted);
+  background: #f9fafb;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -195,7 +210,7 @@ html {
   animation: fade-in 0.5s ease-out forwards;
 }
 
-/* Staggered animation delays */
+/* Animation delays */
 .animation-delay-100 {
   animation-delay: 100ms;
 }
@@ -227,18 +242,6 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-
-  .animate-ping,
-  .animate-float,
-  .animate-pulse-glow,
-  .animate-scale-pulse {
-    animation: none !important;
-  }
-}
-
-/* Perspective utility for 3D cards */
-.perspective-\[1000px\] {
-  perspective: 1000px;
 }
 
 /* Selection styling */
@@ -247,38 +250,23 @@ html {
   color: inherit;
 }
 
-/* Focus visible styling */
+/* Focus styling */
 :focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 
-/* Glassmorphism utility */
+/* Glass effect */
 .glass {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Gradient text utility */
+/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #6366f1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* Hover lift effect */
-.hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px -12px rgba(139, 92, 246, 0.25);
-}
-
-/* Image optimization */
-img {
-  image-rendering: -webkit-optimize-contrast;
 }

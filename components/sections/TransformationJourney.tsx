@@ -15,8 +15,8 @@ export function TransformationJourney() {
             icon: Frown,
             stageIcon: TrendingDown,
             color: "text-neutral-500",
-            bgColor: "bg-neutral-100 dark:bg-neutral-800",
-            borderColor: "border-neutral-200 dark:border-neutral-700",
+            bgColor: "bg-neutral-100",
+            borderColor: "border-neutral-200",
             gradientFrom: "from-neutral-400",
             gradientTo: "to-neutral-500",
             glowColor: "violet" as const,
@@ -26,8 +26,8 @@ export function TransformationJourney() {
             icon: HandHeart,
             stageIcon: Target,
             color: "text-violet-600",
-            bgColor: "bg-violet-100 dark:bg-violet-900/30",
-            borderColor: "border-violet-200 dark:border-violet-800",
+            bgColor: "bg-violet-100",
+            borderColor: "border-violet-200",
             gradientFrom: "from-violet-500",
             gradientTo: "to-purple-500",
             glowColor: "violet" as const,
@@ -37,8 +37,8 @@ export function TransformationJourney() {
             icon: Sparkles,
             stageIcon: Trophy,
             color: "text-green-600",
-            bgColor: "bg-green-100 dark:bg-green-900/30",
-            borderColor: "border-green-200 dark:border-green-800",
+            bgColor: "bg-green-100",
+            borderColor: "border-green-200",
             gradientFrom: "from-green-500",
             gradientTo: "to-emerald-500",
             glowColor: "green" as const,
@@ -46,22 +46,22 @@ export function TransformationJourney() {
     ];
 
     return (
-        <section className="bg-neutral-50 py-24 dark:bg-neutral-950 lg:py-32">
+        <section className="bg-neutral-50 py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* Section title */}
                 <ScrollReveal className="text-center">
                     <motion.span
-                        className="inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700 dark:bg-violet-900/30 dark:text-violet-400"
+                        className="inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
                         The Journey
                     </motion.span>
-                    <h2 className="mt-6 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl dark:text-white">
+                    <h2 className="mt-6 text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
                         {title}
                     </h2>
-                    <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600 dark:text-neutral-400">
+                    <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
                         From where you are, to where you want to be — we'll guide you every step of the way.
                     </p>
                 </ScrollReveal>
@@ -107,10 +107,10 @@ export function TransformationJourney() {
                                             <stage.icon className={`h-6 w-6 ${stage.color}`} />
                                         </div>
                                         <div>
-                                            <span className="text-xs font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-500">
+                                            <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">
                                                 Stage {index + 1}
                                             </span>
-                                            <h3 className="text-xl font-bold text-neutral-900 dark:text-white">
+                                            <h3 className="text-xl font-bold text-neutral-900">
                                                 {stage.label}
                                             </h3>
                                         </div>
@@ -121,7 +121,7 @@ export function TransformationJourney() {
                                         {stage.points.map((point, i) => (
                                             <motion.li
                                                 key={i}
-                                                className="flex items-center gap-3 text-neutral-600 dark:text-neutral-400"
+                                                className="flex items-center gap-3 text-neutral-600"
                                                 initial={{ opacity: 0, x: -10 }}
                                                 whileInView={{ opacity: 1, x: 0 }}
                                                 viewport={{ once: true }}
@@ -138,7 +138,7 @@ export function TransformationJourney() {
                                 {index < 2 && (
                                     <div className="absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 md:block">
                                         <motion.div
-                                            className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg dark:bg-neutral-800"
+                                            className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg"
                                             whileHover={{ scale: 1.1 }}
                                         >
                                             <ArrowRight className="h-4 w-4 text-violet-600" />
@@ -153,25 +153,25 @@ export function TransformationJourney() {
                 {/* Bottom message */}
                 <ScrollReveal delay={0.5} className="mt-16 text-center">
                     <motion.div
-                        className="inline-flex items-center gap-3 rounded-full border border-violet-200 bg-violet-50 px-6 py-3 dark:border-violet-800 dark:bg-violet-900/20"
+                        className="inline-flex items-center gap-3 rounded-full border border-violet-200 bg-violet-50 px-6 py-3"
                         whileHover={{ scale: 1.02 }}
                     >
                         <div className="flex -space-x-2">
                             {["P", "R", "A", "V"].map((letter, i) => (
                                 <div
                                     key={i}
-                                    className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-violet-500 to-purple-500 text-xs font-bold text-white dark:border-neutral-900"
+                                    className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-violet-500 to-purple-500 text-xs font-bold text-white"
                                 >
                                     {letter}
                                 </div>
                             ))}
                         </div>
-                        <p className="text-neutral-600 dark:text-neutral-400">
-                            <span className="font-semibold text-neutral-900 dark:text-white">
+                        <p className="text-neutral-600">
+                            <span className="font-semibold text-neutral-900">
                                 500+ people
                             </span>{" "}
                             have already started their transformation.{" "}
-                            <span className="font-semibold text-violet-600 dark:text-violet-400">
+                            <span className="font-semibold text-violet-600">
                                 You could be next.
                             </span>
                         </p>

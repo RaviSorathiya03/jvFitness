@@ -58,7 +58,7 @@ export function GlowCard({
             {/* Card content */}
             <div
                 className={cn(
-                    "relative h-full rounded-xl border border-neutral-200 bg-white transition-all dark:border-neutral-800 dark:bg-neutral-900",
+                    "relative h-full rounded-xl border border-neutral-200 bg-white transition-all",
                     className
                 )}
             >
@@ -89,7 +89,7 @@ export function GlowCardSimple({
         <motion.div
             whileHover={{ y: -2 }}
             className={cn(
-                "relative rounded-xl border border-neutral-200 bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl dark:border-neutral-800 dark:bg-neutral-900",
+                "relative rounded-xl border border-neutral-200 bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl",
                 glowColors[glowColor],
                 className
             )}
@@ -118,7 +118,7 @@ export function GradientBorderCard({
             {/* Content */}
             <div
                 className={cn(
-                    "relative h-full rounded-[10px] bg-white dark:bg-neutral-900",
+                    "relative h-full rounded-[10px] bg-white",
                     className
                 )}
             >

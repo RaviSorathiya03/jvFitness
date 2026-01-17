@@ -156,7 +156,7 @@ export function TextRevealParagraph({
     return (
         <motion.p
             ref={ref}
-            className={cn("text-lg text-neutral-600 dark:text-neutral-400", className)}
+            className={cn("text-lg text-neutral-600", className)}
             initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
             animate={
                 isInView

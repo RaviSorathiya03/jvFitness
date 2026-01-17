@@ -44,7 +44,7 @@ export function FloatingNavbar({ children, className }: FloatingNavbarProps) {
                 "fixed inset-x-0 top-4 z-50 mx-auto flex max-w-5xl items-center justify-between rounded-full border px-6 py-3 shadow-lg backdrop-blur-md transition-colors",
                 atTop
                     ? "border-transparent bg-white/5"
-                    : "border-neutral-200/50 bg-white/80 dark:border-white/10 dark:bg-neutral-900/80",
+                    : "border-neutral-200/50 bg-white/80",
                 className
             )}
         >

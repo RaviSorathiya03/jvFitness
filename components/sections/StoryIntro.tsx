@@ -9,14 +9,14 @@ export function StoryIntro() {
     const { title, paragraphs, cta } = siteConfig.copy.storyIntro;
 
     return (
-        <section className="relative overflow-hidden bg-white py-24 dark:bg-neutral-900 lg:py-32">
+        <section className="relative overflow-hidden bg-white py-24 lg:py-32">
             {/* Subtle gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-violet-50/50 via-transparent to-transparent dark:from-violet-950/20" />
+            <div className="absolute inset-0 bg-gradient-to-b from-violet-50/50 via-transparent to-transparent" />
 
             <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
                 {/* Section title */}
                 <ScrollReveal>
-                    <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl dark:text-white">
+                    <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
                         {title}
                     </h2>
                 </ScrollReveal>
@@ -33,7 +33,7 @@ export function StoryIntro() {
                 {/* CTA line */}
                 <ScrollReveal delay={0.6}>
                     <motion.p
-                        className="mt-12 text-xl font-semibold text-violet-600 dark:text-violet-400"
+                        className="mt-12 text-xl font-semibold text-violet-600"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}

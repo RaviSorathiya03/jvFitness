@@ -39,7 +39,7 @@ export function BentoGridItem({
     return (
         <div
             className={cn(
-                "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-xl border border-neutral-200 bg-white p-4 shadow-sm transition duration-200 hover:shadow-xl dark:border-white/[0.1] dark:bg-neutral-900 dark:shadow-none",
+                "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-xl border border-neutral-200 bg-white p-4 shadow-sm transition duration-200 hover:shadow-xl",
                 className
             )}
         >
@@ -47,11 +47,11 @@ export function BentoGridItem({
             <div className="transition duration-200 group-hover/bento:translate-x-2">
                 <div className="mb-2 flex items-center gap-2">
                     {icon}
-                    <h3 className="font-sans text-lg font-bold text-neutral-600 dark:text-neutral-200">
+                    <h3 className="font-sans text-lg font-bold text-neutral-600">
                         {title}
                     </h3>
                 </div>
-                <p className="font-sans text-sm font-normal text-neutral-600 dark:text-neutral-300">
+                <p className="font-sans text-sm font-normal text-neutral-600">
                     {description}
                 </p>
             </div>

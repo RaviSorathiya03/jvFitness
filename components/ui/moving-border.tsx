@@ -47,7 +47,7 @@ export function MovingBorder({
             />
             <div
                 className={cn(
-                    "relative z-10 rounded-[inherit] bg-white dark:bg-neutral-950",
+                    "relative z-10 rounded-[inherit] bg-white",
                     className
                 )}
             >

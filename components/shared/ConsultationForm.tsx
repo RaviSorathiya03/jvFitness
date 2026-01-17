@@ -84,12 +84,12 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="fixed inset-x-4 top-[10%] z-50 mx-auto max-w-lg rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900 sm:inset-x-auto"
+                        className="fixed inset-x-4 top-[10%] z-50 mx-auto max-w-lg rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl sm:inset-x-auto"
                     >
                         {/* Close Button */}
                         <button
                             onClick={onClose}
-                            className="absolute right-4 top-4 rounded-full p-1 text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-white"
+                            className="absolute right-4 top-4 rounded-full p-1 text-neutral-500 transition-colors hover:bg-neutral-100 hover:text-neutral-900"
                             aria-label="Close"
                         >
                             <X className="h-5 w-5" />
@@ -97,24 +97,24 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
 
                         {isSubmitted ? (
                             <div className="flex flex-col items-center justify-center py-12 text-center">
-                                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600 dark:bg-green-900/30">
+                                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
                                     <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
                                 </div>
-                                <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">
+                                <h3 className="text-xl font-semibold text-neutral-900">
                                     Thank You!
                                 </h3>
-                                <p className="mt-2 text-neutral-600 dark:text-neutral-400">
+                                <p className="mt-2 text-neutral-600">
                                     We'll connect with you on WhatsApp shortly.
                                 </p>
                             </div>
                         ) : (
                             <>
-                                <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
+                                <h2 className="text-xl font-bold text-neutral-900">
                                     Book Your Free Consultation
                                 </h2>
-                                <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+                                <p className="mt-1 text-sm text-neutral-600">
                                     Fill in your details and we'll reach out to schedule your session.
                                 </p>
 
@@ -122,7 +122,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <div>
                                         <label
                                             htmlFor="name"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Your Name *
                                         </label>
@@ -131,7 +131,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="name"
                                             name="name"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             placeholder="Enter your name"
                                         />
                                     </div>
@@ -139,7 +139,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <div>
                                         <label
                                             htmlFor="phone"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Phone Number *
                                         </label>
@@ -148,7 +148,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="phone"
                                             name="phone"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             placeholder="+91 98765 43210"
                                         />
                                     </div>
@@ -156,7 +156,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <div>
                                         <label
                                             htmlFor="goal"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Your Goal *
                                         </label>
@@ -164,7 +164,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="goal"
                                             name="goal"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                         >
                                             <option value="">Select your goal</option>
                                             {goals.map((goal) => (
@@ -178,7 +178,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <div>
                                         <label
                                             htmlFor="time"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Preferred Time *
                                         </label>
@@ -186,7 +186,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="time"
                                             name="time"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                         >
                                             <option value="">Select preferred time</option>
                                             {timeSlots.map((time) => (
@@ -200,7 +200,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <div>
                                         <label
                                             htmlFor="message"
-                                            className="block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+                                            className="block text-sm font-medium text-neutral-700"
                                         >
                                             Additional Message (Optional)
                                         </label>
@@ -208,7 +208,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="message"
                                             name="message"
                                             rows={3}
-                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-white dark:placeholder-neutral-400"
+                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
                                             placeholder="Tell us more about your goals..."
                                         />
                                     </div>

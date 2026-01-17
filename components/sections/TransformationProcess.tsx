@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function TransformationProcess() {
     return (
-        <section id="process" className="bg-neutral-50 py-24 dark:bg-neutral-950">
+        <section id="process" className="bg-neutral-50 py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <SectionHeading
                     badge="How It Works"
@@ -39,7 +39,7 @@ export function TransformationProcess() {
                                         }`}
                                 >
                                     <div
-                                        className={`inline-block rounded-xl border border-neutral-200 bg-white p-6 shadow-lg transition-all hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-900 ${index % 2 === 0 ? "mr-8" : "ml-8"
+                                        className={`inline-block rounded-xl border border-neutral-200 bg-white p-6 shadow-lg transition-all hover:shadow-xl ${index % 2 === 0 ? "mr-8" : "ml-8"
                                             }`}
                                     >
                                         <div
@@ -47,20 +47,20 @@ export function TransformationProcess() {
                                                 }`}
                                         >
                                             {index % 2 !== 0 && (
-                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                                     <step.icon className="h-5 w-5" />
                                                 </div>
                                             )}
-                                            <h3 className="text-xl font-bold text-neutral-900 dark:text-white">
+                                            <h3 className="text-xl font-bold text-neutral-900">
                                                 {step.title}
                                             </h3>
                                             {index % 2 === 0 && (
-                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                                     <step.icon className="h-5 w-5" />
                                                 </div>
                                             )}
                                         </div>
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                                        <p className="text-sm text-neutral-600">
                                             {step.description}
                                         </p>
                                     </div>
@@ -73,16 +73,16 @@ export function TransformationProcess() {
 
                                 {/* Content - Mobile */}
                                 <div className="flex-1 md:hidden">
-                                    <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+                                    <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-lg">
                                         <div className="mb-2 flex items-center gap-2">
-                                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-100 text-violet-600 dark:bg-violet-900/30">
+                                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
                                                 <step.icon className="h-4 w-4" />
                                             </div>
-                                            <h3 className="font-bold text-neutral-900 dark:text-white">
+                                            <h3 className="font-bold text-neutral-900">
                                                 {step.title}
                                             </h3>
                                         </div>
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                                        <p className="text-sm text-neutral-600">
                                             {step.description}
                                         </p>
                                     </div>

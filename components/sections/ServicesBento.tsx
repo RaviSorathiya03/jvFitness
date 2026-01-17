@@ -79,7 +79,7 @@ const services = [
 
 export function ServicesBento() {
     return (
-        <section id="services" className="bg-white py-24 dark:bg-neutral-900">
+        <section id="services" className="bg-white py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <SectionHeading
                     badge="What We Offer"
