@@ -1,175 +1,54 @@
-# 🏋️ JV Fitness & Wellness Club
+# JV Fitness & Wellness Club
 
-A modern, premium fitness and wellness website built with Next.js 16, featuring stunning animations, responsive design, and a storytelling-first approach.
+A responsive Next.js website for the fitness and wellness club in Adipur, Gujarat. The design uses forest green, leaf green, and warm white, with local photography, clear typography, and restrained motion.
 
-![Next.js](https://img.shields.io/badge/Next.js-16.1.3-black?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=for-the-badge&logo=tailwind-css)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-FF0055?style=for-the-badge&logo=framer)
+## Development
 
----
-
-## ✨ Features
-
-### 🎨 Premium Design
-- **Storytelling-first approach** - Emotional, human-centered design
-- **Green & White theme** - Fresh, energetic, modern health & wellness palette
-- **Glassmorphism effects** - Contemporary glass-like UI elements
-- **Professional typography** - Inter font for optimal readability
-
-### 🎬 Advanced Animations
-- **Framer Motion animations** - Smooth scroll reveals and transitions
-- **Magnetic buttons** - Interactive hover effects
-- **Animated gradient text** - Eye-catching headlines
-- **Floating badges** - Dynamic coach profile display
-- **Marquee testimonials** - Auto-scrolling social proof
-
-### 📱 Sections
-| Section | Description |
-|---------|-------------|
-| **Hero** | Coach photo with floating badges & animated effects |
-| **StoryIntro** | Empathetic messaging addressing user pain points |
-| **Programs** | Bento-style grid with program cards |
-| **TransformationJourney** | Before/During/After visual journey |
-| **TransformationProcess** | Step-by-step coaching timeline |
-| **FreeHealthCheckup** | Book Free Health Checkup via WhatsApp + Services list |
-| **Testimonials** | Auto-scrolling marquee with reviews |
-| **FAQ** | Accordion-style collapsible answers |
-| **CTA** | Final conversion section with gradient |
-| **Contact** | Form + Google Maps + WhatsApp integration |
-
-### 📞 Integrations
-- **WhatsApp** - Click-to-chat with pre-filled message
-- **Click-to-Call** - Direct phone dialing
-- **Email** - mailto: integration
-- **Google Maps** - Embedded location map
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 18+ or Bun
-- npm, yarn, pnpm, or bun
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/RaviSorathiya03/jvFitness.git
-cd jvFitness/jvfitness
-
-# Install dependencies
-bun install
-# or
+```sh
 npm install
-
-# Run development server
-bun run dev
-# or
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the website.
+Open http://localhost:3000. For a production build:
 
-### Build for Production
+```sh
+npm run build
+npm start
+```
 
-```bash
-bun run build
-# or
+## Validation
+
+```sh
+npm run lint
+npx tsc --noEmit
 npm run build
 ```
 
----
+The project uses Next.js 16, React 19, TypeScript, Tailwind CSS 4, Lucide icons, Radix Dialog, and Framer Motion. Use a Node.js version supported by the installed Next.js release.
 
-## 📁 Project Structure
+## Page and interactions
 
-```
-jvfitness/
-├── app/
-│   ├── (marketing)/        # Marketing route group
-│   │   ├── layout.tsx      # Marketing layout with navbar/footer
-│   │   └── page.tsx        # Homepage with all sections
-│   ├── globals.css         # Global styles & animations
-│   └── layout.tsx          # Root layout
-├── components/
-│   ├── layout/             # Navbar, Footer
-│   ├── sections/           # All page sections
-│   ├── shared/             # Reusable components
-│   └── ui/                 # UI primitives (buttons, cards, etc.)
-├── data/                   # Static data (programs, pricing, FAQs)
-├── lib/                    # Utilities, site config, SEO
-└── public/images/          # Static images
-```
+- Introduction with local fitness photography, animated club emblem, and consultation links.
+- Three featured programs, category filters, and an option to reveal all seven programs.
+- Accessible program dialogs with keyboard dismissal, focus restoration, and a link that preselects the consultation goal.
+- Coach introduction using the club’s original Jagruti Vaniya photo.
+- Three-step coaching process, three existing member stories, and a compact FAQ.
+- Consultation form with required fields, phone validation, editable details, and a prepared WhatsApp message.
+- Click-to-call, directions, email, business hours, and the existing associate disclosure.
+- Responsive phone, tablet, and desktop layouts; reduced-motion support; skip navigation; branded favicon and social preview.
 
----
+## Booking behavior
 
-## 🎨 Tech Stack
+The form prepares a message locally. Visitors must open WhatsApp and send it themselves. It does not save leads to a database, send messages automatically, or claim a booking is confirmed. The coach confirms the visit in the WhatsApp conversation.
 
-- **Framework:** [Next.js 16](https://nextjs.org/) with App Router
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS v4
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **Font:** Inter (Google Fonts)
+## Content and appearance
 
----
+- `lib/site.ts`: business contact information, hours, navigation, and disclosure.
+- `data/programs.ts`: program descriptions and inclusions.
+- `components/sections/Programs.tsx`: program presentation, categories, and photography.
+- `data/testimonials.ts`: existing member reviews.
+- `data/faqs.ts`: FAQ answers.
+- `app/globals.css`: palette, typography, layouts, responsive rules, and motion.
+- `public/images/`: local images; the coach photograph is the original club asset.
 
-## 📝 Configuration
-
-### Site Settings
-Edit `lib/site.ts` to update:
-- Business name & tagline
-- Contact details (phone, email, address)
-- WhatsApp number
-- Business hours
-- Social media links
-
-### Programs & Pricing
-Edit files in `data/` folder:
-- `programs.ts` - Coaching programs
-- `pricing.ts` - Pricing tiers
-- `faqs.ts` - FAQ content
-- `testimonials.ts` - Client reviews
-
----
-
-## 🚢 Deployment
-
-### Deploy on Vercel (Recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RaviSorathiya03/jvFitness)
-
-### Other Platforms
-The app can be deployed on any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
-
----
-
-## 📄 Compliance Note
-
-> **Disclaimer:** This website is for an independent Herbalife Nutrition associate/member. It promotes coaching services only, not product sales. Results may vary based on individual effort.
-
----
-
-## 📞 Contact
-
-- **Website:** [jvfitness.in](https://jvfitness.in)
-- **Phone:** +91 97270 54846
-- **Email:** rsorathiya16@gmail.com
-- **Location:** Adipur, Gujarat, India
-
----
-
-## 📜 License
-
-This project is private and proprietary.
-
----
-
-<p align="center">
-  Made with 💜 by <a href="https://github.com/RaviSorathiya03">Ravi Sorathiya</a>
-</p>
+Fitness and food photography comes from Pexels photos [1552242](https://www.pexels.com/photo/1552242/), [841130](https://www.pexels.com/photo/841130/), [1640777](https://www.pexels.com/photo/1640777/), and [3757376](https://www.pexels.com/photo/3757376/). These are illustrative program images, not photographs of the club’s premises or members.

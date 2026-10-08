@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
+import { PageMotion } from "@/components/shared/PageMotion";
 import { Footer } from "@/components/layout/Footer";
 
 export default function MarketingLayout({
@@ -8,8 +9,9 @@ export default function MarketingLayout({
 }) {
     return (
         <>
+            <PageMotion />
             <Navbar />
-            <main>{children}</main>
+            <main id="main-content">{children}</main>
             <Footer />
         </>
     );

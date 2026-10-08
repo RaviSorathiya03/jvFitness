@@ -4,7 +4,7 @@ import "./globals.css";
 import { constructMetadata } from "@/lib/seo";
 
 const inter = Inter({
-  variable: "--font-geist-sans",
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light" style={{ colorScheme: 'light' }}>
-      <body className={`${inter.variable} antialiased`} style={{ backgroundColor: '#fafafa', color: '#171717' }}>
+    <html lang="en">
+      <body className={`${inter.variable} antialiased`}>
         {children}
       </body>
     </html>

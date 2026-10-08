@@ -4,7 +4,7 @@ export const siteConfig = {
     description:
         "Transform your health with personalized coaching, nutrition guidance, and community support. Join our wellness club for sustainable weight management and active lifestyle.",
     url: "https://jvfitness.in",
-    ogImage: "/og-image.jpg",
+    ogImage: "/opengraph-image",
 
     // Contact Information - ACTUAL DETAILS
     contact: {
@@ -38,12 +38,10 @@ export const siteConfig = {
 
     // Navigation Links
     navLinks: [
+        { label: "The club", href: "#about" },
         { label: "Programs", href: "#programs" },
-        { label: "Our Process", href: "#process" },
-        { label: "Testimonials", href: "#testimonials" },
-        { label: "Health Checkup", href: "#health-checkup" },
-        { label: "FAQ", href: "#faq" },
-        { label: "Contact", href: "#contact" },
+        { label: "Our approach", href: "#process" },
+        { label: "Member stories", href: "#testimonials" },
     ],
 
     // Services we provide

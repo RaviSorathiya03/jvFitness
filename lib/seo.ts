@@ -13,6 +13,7 @@ export function constructMetadata({
     noIndex?: boolean;
 } = {}): Metadata {
     return {
+        metadataBase: new URL(siteConfig.url),
         title: {
             default: title,
             template: `%s | ${siteConfig.name}`,
@@ -63,7 +64,7 @@ export function constructMetadata({
             },
         },
         icons: {
-            icon: "/favicon.ico",
+            icon: "/icon.svg",
         },
     };
 }
