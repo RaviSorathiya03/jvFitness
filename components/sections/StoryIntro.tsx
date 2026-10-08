@@ -11,7 +11,7 @@ export function StoryIntro() {
     return (
         <section className="relative overflow-hidden bg-white py-24 lg:py-32">
             {/* Subtle gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-violet-50/50 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-green-50/50 via-transparent to-transparent" />
 
             <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
                 {/* Section title */}
@@ -33,7 +33,7 @@ export function StoryIntro() {
                 {/* CTA line */}
                 <ScrollReveal delay={0.6}>
                     <motion.p
-                        className="mt-12 text-xl font-semibold text-violet-600"
+                        className="mt-12 text-xl font-semibold text-green-600"
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -45,7 +45,7 @@ export function StoryIntro() {
 
                 {/* Decorative line */}
                 <motion.div
-                    className="mx-auto mt-12 h-px w-24 bg-gradient-to-r from-transparent via-violet-500 to-transparent"
+                    className="mx-auto mt-12 h-px w-24 bg-gradient-to-r from-transparent via-green-500 to-transparent"
                     initial={{ scaleX: 0, opacity: 0 }}
                     whileInView={{ scaleX: 1, opacity: 1 }}
                     viewport={{ once: true }}

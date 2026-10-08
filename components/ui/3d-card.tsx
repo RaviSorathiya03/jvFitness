@@ -57,7 +57,7 @@ export function Card3D({
         >
             <div
                 className={cn(
-                    "absolute inset-0 rounded-xl bg-gradient-to-br from-violet-500/20 via-purple-500/20 to-blue-500/20 opacity-0 transition-opacity group-hover:opacity-100",
+                    "absolute inset-0 rounded-xl bg-gradient-to-br from-emerald-500/25 via-green-500/20 to-teal-500/20 opacity-0 transition-opacity group-hover:opacity-100",
                     className
                 )}
                 style={{ transform: "translateZ(-20px)" }}

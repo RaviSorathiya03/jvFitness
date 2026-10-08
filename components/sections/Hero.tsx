@@ -20,15 +20,15 @@ export function Hero() {
     const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;
 
     return (
-        <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-violet-50 via-white to-purple-50 pt-20">
+        <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50 pt-20">
             {/* Background Effects */}
             <GradientBackground className="z-[1] opacity-30" />
-            <Spotlight className="pointer-events-none z-[2]" fill="rgba(139, 92, 246, 0.15)" />
+            <Spotlight className="pointer-events-none z-[2]" fill="rgba(22, 163, 74, 0.12)" />
 
             {/* Decorative blobs */}
-            <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-gradient-to-br from-violet-300/30 to-purple-300/30 blur-3xl" />
-            <div className="absolute -right-40 bottom-40 h-96 w-96 rounded-full bg-gradient-to-br from-blue-300/20 to-violet-300/20 blur-3xl" />
-            <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-pink-200/20 to-violet-200/20 blur-3xl" />
+            <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-gradient-to-br from-green-300/30 to-emerald-300/30 blur-3xl" />
+            <div className="absolute -right-40 bottom-40 h-96 w-96 rounded-full bg-gradient-to-br from-teal-300/20 to-green-300/20 blur-3xl" />
+            <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-lime-200/20 to-green-200/20 blur-3xl" />
 
             <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -40,7 +40,7 @@ export function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-100 to-purple-100 px-4 py-2 text-sm font-medium text-violet-700 shadow-sm">
+                            <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-green-100 to-emerald-100 px-4 py-2 text-sm font-medium text-green-700 shadow-sm">
                                 <Sparkles className="h-4 w-4" />
                                 {badge}
                             </span>
@@ -127,7 +127,7 @@ export function Hero() {
                         <div className="relative">
                             {/* Animated gradient background */}
                             <motion.div
-                                className="absolute -inset-6 rounded-[2rem] bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 opacity-60 blur-2xl"
+                                className="absolute -inset-6 rounded-[2rem] bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 opacity-60 blur-2xl"
                                 animate={{
                                     scale: [1, 1.05, 1],
                                     opacity: [0.5, 0.7, 0.5],
@@ -136,7 +136,7 @@ export function Hero() {
                             />
 
                             {/* Outer decorative frame */}
-                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet-500 via-purple-500 to-pink-500 p-[2px]">
+                            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 p-[2px]">
                                 <div className="h-full w-full rounded-[calc(2rem-2px)] bg-white/80 backdrop-blur-sm" />
                             </div>
 
@@ -165,7 +165,7 @@ export function Hero() {
                                                 className="rounded-xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur-sm"
                                             >
                                                 <p className="text-lg font-bold text-neutral-900">Jagruti Vaniya</p>
-                                                <p className="text-sm text-violet-600">Certified Wellness Coach</p>
+                                                <p className="text-sm text-green-600">Certified Wellness Coach</p>
                                             </motion.div>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@ export function Hero() {
                                     transition={{ delay: 1.3 }}
                                     whileHover={{ scale: 1.05 }}
                                 >
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-orange-500">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-emerald-500">
                                         <Award className="h-5 w-5 text-white" />
                                     </div>
                                     <div>
@@ -195,7 +195,7 @@ export function Hero() {
                                     transition={{ delay: 1.5 }}
                                     whileHover={{ scale: 1.05 }}
                                 >
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-emerald-500">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-teal-500">
                                         <Users className="h-5 w-5 text-white" />
                                     </div>
                                     <div>
@@ -211,7 +211,7 @@ export function Hero() {
                                     transition={{ delay: 1.7 }}
                                     whileHover={{ scale: 1.05 }}
                                 >
-                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-violet-400 to-purple-500">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-green-500 to-emerald-600">
                                         <Star className="h-5 w-5 text-white" />
                                     </div>
                                     <div>
@@ -229,13 +229,13 @@ export function Hero() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 1.2 }}
-                    className="mt-20 grid grid-cols-2 gap-6 rounded-2xl border border-violet-100 bg-white/60 p-6 shadow-lg backdrop-blur-sm sm:grid-cols-4"
+                    className="mt-20 grid grid-cols-2 gap-6 rounded-2xl border border-green-100 bg-white/60 p-6 shadow-lg backdrop-blur-sm sm:grid-cols-4"
                 >
                     {[
-                        { number: "500+", label: "Happy Members", color: "from-violet-500 to-purple-500" },
-                        { number: "5+", label: "Years Experience", color: "from-blue-500 to-cyan-500" },
-                        { number: "7", label: "Programs", color: "from-purple-500 to-pink-500" },
-                        { number: "98%", label: "Satisfaction", color: "from-green-500 to-emerald-500" },
+                        { number: "500+", label: "Happy Members", color: "from-green-500 to-emerald-500" },
+                        { number: "5+", label: "Years Experience", color: "from-emerald-500 to-teal-500" },
+                        { number: "7", label: "Programs", color: "from-green-600 to-green-500" },
+                        { number: "98%", label: "Satisfaction", color: "from-teal-500 to-green-500" },
                     ].map((stat, index) => (
                         <motion.div
                             key={index}

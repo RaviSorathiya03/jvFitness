@@ -16,7 +16,7 @@ export function AnimatedGradientText({
     return (
         <motion.span
             className={cn(
-                "inline-flex animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:300%_100%] bg-clip-text text-transparent",
+                "inline-flex animate-gradient bg-gradient-to-r from-[#16a34a] via-[#059669] to-[#16a34a] bg-[length:300%_100%] bg-clip-text text-transparent",
                 className
             )}
             initial={{ backgroundPosition: "0% 50%" }}

@@ -79,13 +79,13 @@ interface GlowMagneticButtonProps extends MagneticButtonProps {
 export function GlowMagneticButton({
     children,
     className,
-    glowColor = "rgba(139, 92, 246, 0.5)",
+    glowColor = "rgba(16, 185, 129, 0.4)",
     ...props
 }: GlowMagneticButtonProps) {
     return (
         <MagneticButton
             className={cn(
-                "group bg-gradient-to-r from-violet-600 to-purple-600 px-8 py-4 text-white",
+                "group bg-gradient-to-r from-emerald-600 to-green-600 px-8 py-4 text-white shadow-lg shadow-green-600/20",
                 className
             )}
             {...props}

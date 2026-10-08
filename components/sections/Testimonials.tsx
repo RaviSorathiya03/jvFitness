@@ -21,8 +21,8 @@ function TestimonialCard({
         >
             {/* Quote icon */}
             <div className="mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-violet-100">
-                    <Quote className="h-5 w-5 text-violet-600" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50">
+                    <Quote className="h-5 w-5 text-emerald-600" />
                 </div>
             </div>
 
@@ -40,7 +40,7 @@ function TestimonialCard({
 
             {/* Author */}
             <div className="mt-4 flex items-center gap-3 border-t border-neutral-100 pt-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-purple-500 text-sm font-bold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-green-600 text-sm font-bold text-white shadow-sm shadow-green-500/20">
                     {name.charAt(0)}
                 </div>
                 <div>
@@ -79,7 +79,7 @@ export function Testimonials() {
                         {["P", "R", "A", "V"].map((letter, i) => (
                             <div
                                 key={i}
-                                className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-violet-500 to-purple-500 text-xs font-bold text-white"
+                                className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-emerald-500 to-green-600 text-xs font-bold text-white"
                             >
                                 {letter}
                             </div>

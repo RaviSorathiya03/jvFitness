@@ -19,28 +19,28 @@ export function TransformationJourney() {
             borderColor: "border-neutral-200",
             gradientFrom: "from-neutral-400",
             gradientTo: "to-neutral-500",
-            glowColor: "violet" as const,
+            glowColor: "green" as const,
         },
         {
             ...during,
             icon: HandHeart,
             stageIcon: Target,
-            color: "text-violet-600",
-            bgColor: "bg-violet-100",
-            borderColor: "border-violet-200",
-            gradientFrom: "from-violet-500",
-            gradientTo: "to-purple-500",
-            glowColor: "violet" as const,
-        },
-        {
-            ...after,
-            icon: Sparkles,
-            stageIcon: Trophy,
             color: "text-green-600",
             bgColor: "bg-green-100",
             borderColor: "border-green-200",
             gradientFrom: "from-green-500",
             gradientTo: "to-emerald-500",
+            glowColor: "green" as const,
+        },
+        {
+            ...after,
+            icon: Sparkles,
+            stageIcon: Trophy,
+            color: "text-emerald-600",
+            bgColor: "bg-emerald-100",
+            borderColor: "border-emerald-200",
+            gradientFrom: "from-emerald-500",
+            gradientTo: "to-teal-500",
             glowColor: "green" as const,
         },
     ];
@@ -51,7 +51,7 @@ export function TransformationJourney() {
                 {/* Section title */}
                 <ScrollReveal className="text-center">
                     <motion.span
-                        className="inline-flex items-center gap-2 rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700"
+                        className="inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-1.5 text-sm font-medium text-green-700"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -141,7 +141,7 @@ export function TransformationJourney() {
                                             className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-lg"
                                             whileHover={{ scale: 1.1 }}
                                         >
-                                            <ArrowRight className="h-4 w-4 text-violet-600" />
+                                            <ArrowRight className="h-4 w-4 text-green-600" />
                                         </motion.div>
                                     </div>
                                 )}
@@ -153,14 +153,14 @@ export function TransformationJourney() {
                 {/* Bottom message */}
                 <ScrollReveal delay={0.5} className="mt-16 text-center">
                     <motion.div
-                        className="inline-flex items-center gap-3 rounded-full border border-violet-200 bg-violet-50 px-6 py-3"
+                        className="inline-flex items-center gap-3 rounded-full border border-green-200 bg-green-50 px-6 py-3"
                         whileHover={{ scale: 1.02 }}
                     >
                         <div className="flex -space-x-2">
                             {["P", "R", "A", "V"].map((letter, i) => (
                                 <div
                                     key={i}
-                                    className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-violet-500 to-purple-500 text-xs font-bold text-white"
+                                    className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-gradient-to-br from-green-500 to-emerald-500 text-xs font-bold text-white"
                                 >
                                     {letter}
                                 </div>
@@ -171,7 +171,7 @@ export function TransformationJourney() {
                                 500+ people
                             </span>{" "}
                             have already started their transformation.{" "}
-                            <span className="font-semibold text-violet-600">
+                            <span className="font-semibold text-green-600">
                                 You could be next.
                             </span>
                         </p>

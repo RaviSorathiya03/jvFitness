@@ -19,7 +19,7 @@ export function Navbar() {
                     className="flex items-center gap-2 text-lg font-bold text-neutral-900"
                 >
                     <motion.span
-                        className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent"
+                        className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent"
                         whileHover={{ scale: 1.05 }}
                     >
                         JV
@@ -52,7 +52,7 @@ export function Navbar() {
                     {/* CTA Button - Desktop */}
                     <ShimmerButton
                         className="hidden md:flex"
-                        background="linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)"
+                        background="linear-gradient(135deg, #16a34a 0%, #059669 100%)"
                         onClick={() => {
                             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                         }}
@@ -134,7 +134,7 @@ export function Navbar() {
                                 >
                                     <ShimmerButton
                                         className="mt-4 w-full"
-                                        background="linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)"
+                                        background="linear-gradient(135deg, #16a34a 0%, #059669 100%)"
                                         onClick={() => {
                                             setMobileMenuOpen(false);
                                             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });

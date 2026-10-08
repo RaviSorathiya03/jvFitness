@@ -72,15 +72,15 @@ export function GlowCard({
 export function GlowCardSimple({
     children,
     className,
-    glowColor = "violet",
+    glowColor = "green",
 }: {
     children: ReactNode;
     className?: string;
     glowColor?: "violet" | "blue" | "green" | "amber";
 }) {
     const glowColors = {
-        violet: "hover:shadow-violet-500/25",
-        blue: "hover:shadow-blue-500/25",
+        violet: "hover:shadow-emerald-500/25",
+        blue: "hover:shadow-teal-500/25",
         green: "hover:shadow-green-500/25",
         amber: "hover:shadow-amber-500/25",
     };
@@ -110,10 +110,10 @@ export function GradientBorderCard({
     return (
         <div className="group relative h-full rounded-xl p-[2px]">
             {/* Static gradient border */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-violet-500 via-purple-500 to-blue-500 opacity-30 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 opacity-30 transition-opacity group-hover:opacity-100" />
 
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-violet-500 via-purple-500 to-blue-500 opacity-0 blur-sm transition-opacity group-hover:opacity-50" />
+            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 opacity-0 blur-sm transition-opacity group-hover:opacity-50" />
 
             {/* Content */}
             <div

@@ -4,7 +4,7 @@ import { Programs } from "@/components/sections/Programs";
 import { TransformationJourney } from "@/components/sections/TransformationJourney";
 import { TransformationProcess } from "@/components/sections/TransformationProcess";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { Pricing } from "@/components/sections/Pricing";
+import { FreeHealthCheckup } from "@/components/sections/FreeHealthCheckup";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { Contact } from "@/components/sections/Contact";
@@ -31,8 +31,8 @@ export default function HomePage() {
             {/* Social proof */}
             <Testimonials />
 
-            {/* Investment */}
-            <Pricing />
+            {/* Free Health Checkup + Services */}
+            <FreeHealthCheckup />
 
             {/* Address concerns */}
             <FAQ />

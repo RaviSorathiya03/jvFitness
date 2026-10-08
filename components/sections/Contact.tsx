@@ -114,7 +114,7 @@ export function Contact() {
                                                 id="contact-name"
                                                 name="name"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                                 placeholder="Enter your name"
                                             />
                                         </div>
@@ -130,7 +130,7 @@ export function Contact() {
                                                 id="contact-phone"
                                                 name="phone"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                                 placeholder="+91 98765 43210"
                                             />
                                         </div>
@@ -148,7 +148,7 @@ export function Contact() {
                                                 id="contact-goal"
                                                 name="goal"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             >
                                                 <option value="">Select your goal</option>
                                                 {goals.map((goal) => (
@@ -169,7 +169,7 @@ export function Contact() {
                                                 id="contact-time"
                                                 name="time"
                                                 required
-                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                                className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             >
                                                 <option value="">Select preferred time</option>
                                                 {timeSlots.map((time) => (
@@ -192,7 +192,7 @@ export function Contact() {
                                             id="contact-message"
                                             name="message"
                                             rows={3}
-                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             placeholder="Tell us more about your goals..."
                                         />
                                     </div>
@@ -200,7 +200,7 @@ export function Contact() {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-violet-600 to-purple-600 px-4 py-3 font-medium text-white transition-all hover:from-violet-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+                                        className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-emerald-600 to-green-600 px-4 py-3 font-semibold text-white shadow-md shadow-emerald-600/20 transition-all hover:from-emerald-700 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
                                     >
                                         {isSubmitting ? (
                                             <>
@@ -244,9 +244,9 @@ export function Contact() {
                                 href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="flex items-center gap-4 rounded-xl border-2 border-violet-200 bg-violet-50 p-4 transition-colors hover:bg-violet-100"
+                                className="flex items-center gap-4 rounded-xl border-2 border-emerald-200 bg-emerald-50/70 p-4 transition-colors hover:bg-emerald-100/70"
                             >
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-violet-500 text-white">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-600 text-white shadow-md shadow-emerald-600/20">
                                     <Phone className="h-6 w-6" />
                                 </div>
                                 <div>
@@ -262,7 +262,7 @@ export function Contact() {
                             whileHover={{ scale: 1.01 }}
                             className="flex items-center gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 transition-colors hover:bg-neutral-100"
                         >
-                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
                                 <Mail className="h-5 w-5" />
                             </div>
                             <div>
@@ -274,7 +274,7 @@ export function Contact() {
                         {/* Address & Hours */}
                         <div className="grid gap-4 sm:grid-cols-2">
                             <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
                                     <MapPin className="h-5 w-5" />
                                 </div>
                                 <h4 className="font-medium text-neutral-900">Visit Us</h4>
@@ -284,7 +284,7 @@ export function Contact() {
                             </div>
 
                             <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
                                     <Clock className="h-5 w-5" />
                                 </div>
                                 <h4 className="font-medium text-neutral-900">Hours</h4>

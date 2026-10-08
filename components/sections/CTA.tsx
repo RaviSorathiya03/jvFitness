@@ -18,7 +18,7 @@ export function CTA() {
     return (
         <section className="relative overflow-hidden py-24 lg:py-32">
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-purple-600 to-blue-600" />
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-green-600 to-teal-700" />
             <GradientBackground className="opacity-20" />
 
             {/* Pattern Overlay */}
@@ -56,8 +56,8 @@ export function CTA() {
                     <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <GlowMagneticButton
                             onClick={() => setIsFormOpen(true)}
-                            glowColor="rgba(255, 255, 255, 0.3)"
-                            className="bg-white px-8 py-4 text-violet-700 hover:bg-white/90"
+                            glowColor="rgba(255, 255, 255, 0.4)"
+                            className="bg-white px-8 py-4 font-semibold text-emerald-700 hover:bg-white/95"
                         >
                             <Calendar className="mr-2 h-5 w-5" />
                             {button}

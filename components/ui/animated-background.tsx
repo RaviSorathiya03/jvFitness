@@ -117,9 +117,9 @@ export function AnimatedBackground({
 export function GradientBackground({ className }: { className?: string }) {
     return (
         <div className={cn("absolute inset-0 overflow-hidden", className)}>
-            <div className="absolute -left-1/4 -top-1/4 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-violet-500/30 to-purple-500/30 blur-3xl" />
-            <div className="absolute -bottom-1/4 -right-1/4 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-blue-500/30 to-cyan-500/30 blur-3xl" />
-            <div className="absolute left-1/3 top-1/2 h-1/3 w-1/3 rounded-full bg-gradient-to-r from-pink-500/20 to-rose-500/20 blur-3xl" />
+            <div className="absolute -left-1/4 -top-1/4 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-emerald-500/25 to-green-500/25 blur-3xl" />
+            <div className="absolute -bottom-1/4 -right-1/4 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-teal-500/20 to-emerald-500/20 blur-3xl" />
+            <div className="absolute left-1/3 top-1/2 h-1/3 w-1/3 rounded-full bg-gradient-to-r from-green-400/15 to-emerald-400/15 blur-3xl" />
         </div>
     );
 }

@@ -33,14 +33,28 @@ export const siteConfig = {
     // WhatsApp pre-filled message
     whatsappMessage: "Hi! I'm interested in learning more about your wellness coaching programs. Can we schedule a free consultation?",
 
+    // Health Checkup WhatsApp message
+    healthCheckupMessage: "Hi! I want to book a FREE Health Checkup.",
+
     // Navigation Links
     navLinks: [
         { label: "Programs", href: "#programs" },
         { label: "Our Process", href: "#process" },
         { label: "Testimonials", href: "#testimonials" },
-        { label: "Pricing", href: "#pricing" },
+        { label: "Health Checkup", href: "#health-checkup" },
         { label: "FAQ", href: "#faq" },
         { label: "Contact", href: "#contact" },
+    ],
+
+    // Services we provide
+    services: [
+        "Weight Loss",
+        "Weight Gain",
+        "Nutrition Coaching",
+        "Fitness & Strength",
+        "Energy & Lifestyle",
+        "Digestive Wellness",
+        "Skin & Self-Care",
     ],
 
     // Emotional Copy - Storytelling

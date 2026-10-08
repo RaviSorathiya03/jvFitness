@@ -17,10 +17,10 @@ export function TransformationProcess() {
 
                 <div className="relative">
                     {/* Timeline Line - Desktop */}
-                    <div className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-gradient-to-b from-violet-500 via-purple-500 to-blue-500 md:block" />
+                    <div className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-gradient-to-b from-green-500 via-emerald-500 to-teal-500 md:block" />
 
                     {/* Timeline Line - Mobile */}
-                    <div className="absolute left-6 top-0 h-full w-0.5 bg-gradient-to-b from-violet-500 via-purple-500 to-blue-500 md:hidden" />
+                    <div className="absolute left-6 top-0 h-full w-0.5 bg-gradient-to-b from-green-500 via-emerald-500 to-teal-500 md:hidden" />
 
                     <div className="space-y-12 md:space-y-0">
                         {processSteps.map((step, index) => (
@@ -47,7 +47,7 @@ export function TransformationProcess() {
                                                 }`}
                                         >
                                             {index % 2 !== 0 && (
-                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 text-green-600">
                                                     <step.icon className="h-5 w-5" />
                                                 </div>
                                             )}
@@ -55,7 +55,7 @@ export function TransformationProcess() {
                                                 {step.title}
                                             </h3>
                                             {index % 2 === 0 && (
-                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                                                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 text-green-600">
                                                     <step.icon className="h-5 w-5" />
                                                 </div>
                                             )}
@@ -67,7 +67,7 @@ export function TransformationProcess() {
                                 </div>
 
                                 {/* Step Number */}
-                                <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-600 text-lg font-bold text-white shadow-lg md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-green-600 to-emerald-600 text-lg font-bold text-white shadow-lg md:absolute md:left-1/2 md:-translate-x-1/2">
                                     {step.step}
                                 </div>
 
@@ -75,7 +75,7 @@ export function TransformationProcess() {
                                 <div className="flex-1 md:hidden">
                                     <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-lg">
                                         <div className="mb-2 flex items-center gap-2">
-                                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-100 text-violet-600">
+                                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-100 text-green-600">
                                                 <step.icon className="h-4 w-4" />
                                             </div>
                                             <h3 className="font-bold text-neutral-900">

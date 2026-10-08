@@ -131,7 +131,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="name"
                                             name="name"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             placeholder="Enter your name"
                                         />
                                     </div>
@@ -148,7 +148,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="phone"
                                             name="phone"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             placeholder="+91 98765 43210"
                                         />
                                     </div>
@@ -164,7 +164,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="goal"
                                             name="goal"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                         >
                                             <option value="">Select your goal</option>
                                             {goals.map((goal) => (
@@ -186,7 +186,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="time"
                                             name="time"
                                             required
-                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                         >
                                             <option value="">Select preferred time</option>
                                             {timeSlots.map((time) => (
@@ -208,7 +208,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                             id="message"
                                             name="message"
                                             rows={3}
-                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                                            className="mt-1 block w-full resize-none rounded-lg border border-neutral-300 bg-white px-4 py-2.5 text-neutral-900 placeholder-neutral-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
                                             placeholder="Tell us more about your goals..."
                                         />
                                     </div>
@@ -216,7 +216,7 @@ export function ConsultationForm({ isOpen, onClose }: ConsultationFormProps) {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-violet-600 to-purple-600 px-4 py-3 font-medium text-white transition-all hover:from-violet-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
+                                        className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-emerald-600 to-green-600 px-4 py-3 font-semibold text-white shadow-md shadow-emerald-600/20 transition-all hover:from-emerald-700 hover:to-green-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-70"
                                     >
                                         {isSubmitting ? (
                                             <>

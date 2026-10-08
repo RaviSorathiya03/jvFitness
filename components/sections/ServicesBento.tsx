@@ -22,8 +22,8 @@ const services = [
         icon: Scale,
         className: "md:col-span-2",
         header: (
-            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-500/20">
-                <Scale className="h-16 w-16 text-violet-600/50" />
+            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/20">
+                <Scale className="h-16 w-16 text-emerald-600/60" />
             </div>
         ),
     },
@@ -34,8 +34,8 @@ const services = [
         icon: TrendingUp,
         className: "",
         header: (
-            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20">
-                <TrendingUp className="h-12 w-12 text-blue-600/50" />
+            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-teal-500/20 to-emerald-500/20">
+                <TrendingUp className="h-12 w-12 text-teal-600/60" />
             </div>
         ),
     },
@@ -46,8 +46,8 @@ const services = [
         icon: Zap,
         className: "",
         header: (
-            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/20">
-                <Zap className="h-12 w-12 text-amber-600/50" />
+            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-lime-500/20 to-green-500/20">
+                <Zap className="h-12 w-12 text-lime-600/60" />
             </div>
         ),
     },
@@ -58,8 +58,8 @@ const services = [
         icon: Heart,
         className: "",
         header: (
-            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-rose-500/20 to-pink-500/20">
-                <Heart className="h-12 w-12 text-rose-600/50" />
+            <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20">
+                <Heart className="h-12 w-12 text-emerald-600/60" />
             </div>
         ),
     },
@@ -71,7 +71,7 @@ const services = [
         className: "md:col-span-2",
         header: (
             <div className="flex h-full min-h-[6rem] w-full items-center justify-center rounded-xl bg-gradient-to-br from-green-500/20 to-emerald-500/20">
-                <Dumbbell className="h-16 w-16 text-green-600/50" />
+                <Dumbbell className="h-16 w-16 text-green-600/60" />
             </div>
         ),
     },
@@ -102,7 +102,7 @@ export function ServicesBento() {
                                 title={service.title}
                                 description={service.description}
                                 header={service.header}
-                                icon={<service.icon className="h-5 w-5 text-violet-600" />}
+                                icon={<service.icon className="h-5 w-5 text-emerald-600" />}
                                 className="h-full"
                             />
                         </motion.div>

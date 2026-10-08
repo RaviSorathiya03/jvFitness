@@ -35,7 +35,7 @@ export function SectionHeading({
             )}
         >
             {badge && (
-                <span className="mb-4 inline-flex items-center rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700">
+                <span className="mb-4 inline-flex items-center rounded-full bg-green-100 px-4 py-1.5 text-sm font-medium text-green-700">
                     {badge}
                 </span>
             )}

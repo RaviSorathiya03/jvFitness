@@ -13,7 +13,7 @@ A modern, premium fitness and wellness website built with Next.js 16, featuring 
 
 ### 🎨 Premium Design
 - **Storytelling-first approach** - Emotional, human-centered design
-- **Violet/Purple gradient theme** - Modern, premium color palette
+- **Green & White theme** - Fresh, energetic, modern health & wellness palette
 - **Glassmorphism effects** - Contemporary glass-like UI elements
 - **Professional typography** - Inter font for optimal readability
 
@@ -32,8 +32,8 @@ A modern, premium fitness and wellness website built with Next.js 16, featuring 
 | **Programs** | Bento-style grid with program cards |
 | **TransformationJourney** | Before/During/After visual journey |
 | **TransformationProcess** | Step-by-step coaching timeline |
+| **FreeHealthCheckup** | Book Free Health Checkup via WhatsApp + Services list |
 | **Testimonials** | Auto-scrolling marquee with reviews |
-| **Pricing** | Tiered pricing with featured highlight |
 | **FAQ** | Accordion-style collapsible answers |
 | **CTA** | Final conversion section with gradient |
 | **Contact** | Form + Google Maps + WhatsApp integration |
